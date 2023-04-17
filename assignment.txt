@@ -1,0 +1,452 @@
+    • Are the HTML tags and elements the same thing?						
+ans:- HTML tag is just opening or closing entity. For example: <p> and </p> are called HTML tags.
+      HTML element encompasses opening tag, closing tag, content (optional for content-less tags) Eg:<p>This is the content</p> : This complete thing is called a HTML element
+    • What are tags and attributes in HTML?
+ans:- HTML Tags: Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever written inside < and > are called tags.
+      HTML Attributes: It is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the    
+      element.
+      Example: <p align="center">This is paragraph.</p>
+    • What are void elements in HTML?
+ans:- There is a special group of elements that only have start tags and does not contain any content within it, these elements are called void elements. Void elements doesn’t have ending           
+      tags and can only have attributes but do not contain any kind of content. These elements can have backslash before ending of start tag but that is completely optional. Example of such             
+      elements are <br>, <hr>, <img>, <input>, <link>, <base>, <meta>, <param>, <area>, <embed>, <col>, <track>, <source> etc.
+    • What are HTML Entities?
+ans:- HTML provides some method to display reserved characters. Reserved characters are those characters that are either reserved for HTML or those which are not present in the basic keyboard. For instance,        
+      ‘<‘ is reserved in HTML language. Sometimes this character needs to display on the web page which creates ambiguity in code. Along with these are the characters which are normally not present in basic    
+      keyboard ( £, ¥, €, © ), etc. HTML provides some Entity names and Entity numbers to use these symbols. Entity names are case-sensitive.
+    • What are different types of lists in HTML?
+ans:- A list is a record of short pieces of related information or used to display the data or any information on web pages in the ordered or unordered form. For instance, to purchase the items, we need to 
+      prepare a list that can either be ordered or unordered list which helps us to organize the data & easy to find the item. Please refer to the HTML <li> type Attribute article for the various types of    
+      attributes that can be used with the ordered & unordered list.
+      Example: The below example illustrates the use of the unordered & ordered list in HTML. 
+      
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>GeeksforGeeks</title>
+</head>
+
+<body>
+	<h2>Welcome To GeeksforGeeks Learning</h2>
+	<h5>List of available courses</h5>
+	<ul>
+		<li>Data Structures & Algorithm</li>
+		<li>Web Technology</li>
+		<li>Aptitude & Logical Reasoning</li>
+		<li>Programming Languages</li>
+	</ul>
+	<h5>Data Structures topics</h5>
+	<ol>
+		<li>Array</li>
+		<li>Linked List</li>
+		<li>Stacks</li>
+		<li>Queues</li>
+		<li>Trees</li>
+		<li>Graphs</li>
+	</ol>
+</body>
+
+</html>
+
+    • What is the ‘class’ attribute in HTML?
+ans:- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.country {
+			background-color: black;
+			color: white;
+			padding: 8px;
+		}
+	</style>
+</head>
+<body>
+	<h2 class="country">CHINA</h2>
+	
+<p>China has the largest population
+	in the world.</p>
+
+	<h2 class="country">INDIA</h2>
+	
+<p>India has the second largest
+	population in the world.</p>
+
+	<h2 class="country">UNITED STATES</h2>
+	
+<p>United States has the third largest
+	population in the world.</p>
+
+</body>
+</html>
+
+
+    • What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?
+ans:- HTML id Attribute: The id attribute is a unique identifier that is used to specify the document. It is used by CSS and JavaScript to perform a certain task for a unique element. In 
+      CSS, the id attribute is written using the # symbol followed by id.
+   Example:
+      <!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		HTML id attribute
+	</title>
+	
+	<style>
+		#geeks{
+			color: green;
+			font-size: 25px;
+		}
+	</style>
+</head>
+
+<body style="text-align: center">
+	<h1>Geeks for Geeks</h1>
+	<p id="geeks">Welcome to Geeks for Geeks</p>
+	<p>A Computer Science portal for geeks</p>
+</body>
+
+</html>					
+
+--> HTML class Attribute: The class attribute is used to specify one or more class names for an HTML element. The class attribute can be used on any HTML element. The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name. The class name in CSS stylesheet using “.” symbol.
+
+Example:
+   <!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.geeks{
+			color: green;
+			font-size: 25px;
+		}
+	</style>
+</head>
+
+<body style="text-align: center;">
+	<h1>Geeks for Geeks</h1>
+	<p> Welcome to Geeks for Geeks</p>
+	<p class="geeks">
+		A Computer Science portal for geeks
+	</p>
+</body>
+
+</html>					
+
+    • What are the various formatting tags in HTML?
+ans:- HTML provides many predefined elements that are used to change the formatting of text. The formatting can be used to set the text styles (like – bold, italic, or emphasized, etc.), 
+      highlighting the text, making text superscript and subscript, etc.
+
+Example:
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Bold and strong</title>
+</head>
+
+<body>
+	<!--Normal text-->
+	<p>Normal Text</p>
+
+	<!--Text in Bold-->
+	<p><b>Bold Text</b></p>
+
+	<!--Text in Strong-->
+	<p><strong> Strong Text</strong></p>
+
+	<!--Normal text-->
+    <p>Normal Text</p>
+  
+    <!--Text in Italics-->
+    <p><i>The Text inside italic Tag</i></p>
+  
+    <!--Text in Emphasize-->
+    <p><em>Emphasized Text</em></p>
+
+	 <!--Text in Normal-->
+    <p>Normal text</p>
+  
+    <small>The text inside small Tag</small>
+    <p>
+        <big>The text inside big Tag</big>
+    </p>
+
+	 <!--Text in Normal-->
+    <p>Normal Text
+      
+    <!--Text in Superscript-->
+    <p>
+        <sup>superscript </sup> Text
+    </p>
+  
+    <!--Text in Subscript-->
+    <p>
+        <sub>subscript</sub>Text
+    </p>
+
+	<!--Deleting andText in Insert-->
+    <b>
+        <p>The TajMahal is located in
+            <del>Bombay</del>
+            <ins>Agra</ins>
+        </p>
+    </b>
+
+	<!--Text in Normal-->
+    <p>Normal Text</p>
+  
+    <!--Text in Highlight-->
+    <p>
+        <mark>Highlighted Text</mark>
+    </p>
+
+</body>
+
+</html>
+
+    • How is Cell Padding different from Cell Spacing?
+ans:- 
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,
+				initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		span{
+		text-decoration-style: solid;
+		width: 25px;
+		font-size: x-large;
+		color: blueviolet;
+		}
+	</style>
+</head>
+<body>
+<table border="1"
+	cellpadding="4"
+	cellspacing="5">
+<thead>
+<td><span>Name</span></td>
+<td><span>Age</span></td>
+</thead>
+<tbody>
+<tr>
+	<td>Rani</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>Rajan</td>
+	<td>35</td>
+</tr>
+<tr>
+	<td>Akshaya</td>
+	<td>17</td>
+</tr>
+<tr>
+	<td>Ashick</td>
+	<td>13</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+
+
+    • How can we club two or more rows or columns into a single row or column in an HTML table?
+ans:- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th colspan="6">Time Table</th>
+        </tr>
+        <TR>
+            <Th rowspan="6">Hours</Th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+        </TR>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <Td>Science</Td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+            <Td>Science</Td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <th colspan="5">Lunch</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <Td>Math</Td>
+            <th rowspan="2" colspan="2" >Project</th>
+            
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Science</td>
+            <td>Math</td>
+        
+        </tr>
+
+        
+
+    </table>
+</body>
+</html>
+
+    • What is the difference between a block-level element and an inline element?
+ans:- Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any   
+      other elements next to it.
+
+ Example: 
+
+<h1>-<h6> : This element is used for including headings of different sizes ranging from 1 to 6.
+<div>: This is a container tag and is used to make separate divisions of content on the web page.
+<hr>: This is an empty tag and is used for separating content by horizontal lines.
+<li>: This tag is used for including list items of an ordered or unordered list.
+<ul>: This tag is used to make an unordered list.
+<ol>: This tag is used to make an ordered list.
+<p>: This tag is used to include paragraphs of content in the webpage.
+<table>: This tag is used for including the tables in the webpage when there is a need for tabular data.
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Meta data-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+
+	<!--The description written on title tag
+		get appeared as browser tab name-->
+	<title>Geeks For Geeks </title>
+
+	<style>
+		h1 {
+			color: #006600;
+			text-align: center;
+			border: 2px solid #091418;
+			background-color: yellow;
+		}
+		.container {
+			border: 2px solid #040804;
+			background-color: slategray;
+		}
+		p{
+			border: 2px solid #040804;
+			background-color: #4089c5;
+		}
+	</style>
+</head>
+
+<!-- Whatever content in the body tag
+	appears on the webpage -->
+
+<body>
+	<div class="container" >
+		<h1>Geeks for Geeks(h1) </h1>
+		
+<p>
+			This is a paragraph example of block
+			element which occupied whole width (p)
+		</p>
+
+	</div>
+</body>
+
+</html>
+
+--->  Inline elements: Inline elements occupy only enough width that is sufficient to it and allows other elements next to it which are inline. Inline elements don’t start from a new line  
+      and don’t have top and bottom margins as block elements have.
+
+Examples of Inline elements:
+
+<a>: This tag is used for including hyperlinks in the webpage.
+<br>: This tag is used for mentioning line breaks in the webpage wherever needed.
+<script> : This tag is used for including external and internal JavaScript codes.
+<input>: This tag is used for taking input from the users and is mainly used in forms.
+<img>: This tag is used for including different images in the webpage to add beauty to the webpage.
+<span>:  This is an inline container that takes necessary space only.
+<b>:  This tag is used in places where bold text is needed.
+<label>: The tag in HTML is used to provide a usability improvement for mouse users i.e, if a user clicks on the text within the <label> element, it toggles the control.
+ 
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Meta data-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<style>
+		h1 {
+			color: #006600;
+			text-align: center;
+		}
+
+		span {
+			border: 2px solid #040804;
+			background-color: #4089c5;
+		}
+
+		a {
+			border: 2px solid #040804;
+		}
+	</style>
+</head>
+
+<!-- Whatever content in body tag
+	appears on the webpage-->
+<body>
+	<div class="container">
+		<h1>Geeks for Geeks</h1>
+		
+<p>
+			This is a <span>span element </span>
+			<span>and </span><b>this</b> is a
+			<a href="#">link</a> which are examples
+			of inline elements which occupy only
+			sufficient width.
+		</p>
+
+	</div>
+</body>
+
+</html>
+
+
+  
+
+ 
