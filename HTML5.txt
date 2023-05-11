@@ -1,0 +1,104 @@
+Q-1:-What are the new tags added in HTML5?
+ans:-HTML5 is an upgraded version of HTML 4.01. New elements are added in HTML5 to write easy and fast code to create complex, dynamic, engaging, and effective websites. These new elements add advanced functional features, improvised page layouts, and other improvements. The commonly used new HTML5 tags are <figure>, <article>, <header>, <main>,<footer>, <nav>, and <section>.
+The media tags used to enhance a HTML webpage are <audio>, <source>, <track>, <video>, and <embed>.
+
+
+
+Q-2:-How to embed audio and video in a webpage?
+ans:-
+   VIDEO and SOURCE and TRACK
+<br>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+</video>
+<br>
+AUDIO
+<br>
+<audio controls>
+  <source src="voice.ogg" type="audio/ogg">
+</audio>
+<br>
+EMBED
+<br>
+<embed src="https://www.youtube.com/embed/AlIppLTkf0I" >
+</embed>
+
+
+Q-3:-Semantic element in HTML5?
+ans:-As the name suggests, the new semantic elements are used to define the structure of different parts of a web page.
+
+<article> - Used to specify a portion of a page that includes an independent piece of content in a document, section, or website. 
+
+<aside>   - Used to indicate that the specified article is somehow related to the rest of the document but is kept aside. It is mainly used for extra information in main content like links, sidebars, and ads.
+
+<data>    - Used to facilitate a machine-readable version of the data.
+
+<details> - Used to define any additional information on a topic or a summary.
+
+<dialog>  - Used to include a dialog box in webpage.
+
+<figcaption>  - 	Used to specify a caption for a <figure> element.
+
+<figure> -  Used to indicate content like photos, diagrams, categorizations, maps, images, code articles, etc.
+
+<footer> - Used to specify a footer for a section Information like copyright, and author name are mentioned here.
+
+<header> -  Used to specify a header for a section.
+
+<main> - 	Used to specify the main content or important section of a document.
+
+<mark> - 	Used to mark or highlight the specified content with a background color.
+
+<menuitem> - 	Used to specify a command that the user can invoke from a popup menu.
+
+<meter> - 	Used to determine a scalar/fractional value within a given range.
+
+<nav>	-  Used to specify a navigation link in a webpage.
+
+<rp> - 	Used to include parentheses in a ruby character.
+
+<rt> - 	Used to indicate the pronunciation of ruby characters.
+
+<ruby> - 	Used to specify a ruby annotation along with <rp> and <rt>. Ex: Japanese characters
+
+<section> - 	Used to define a specific section in a webpage.
+
+<summary> - 	Used as a subpart of the <details> tag which displays hidden text on clicking the heading.
+
+<time> - 	It displays human-readable date/time within a webpage.
+
+
+Q-4:-Canvas and SVG tags?
+ans:-The Graphics tags allow developers to add graphics and make a bland website presentable. The graphic tags in HTML5 are as follows.
+
+<canvas> - It is used to draw canvas, graphics and animations using JavaScript.
+
+<svg>    - It is used to draw vector graphics and display shapes.
+
+Example:-
+
+<div>
+  SVG
+  <svg id = "svgelem" height = "110" xmlns = "">
+    <circle id = "circle" cx = "50" cy = "50" r = "50" fill = "lavender" />
+  </svg>
+</div>
+<div>
+  <canvas id="Canvas" width="200" height="100" style="border:1px solid #000000;">
+    Your browser does not support the HTML canvas tag.
+  </canvas>
+  <br>Blank Canvas
+  <br>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    Your browser does not support the HTML canvas tag.
+  </canvas>
+  <br>Canvas with a straight line
+</div>
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(200, 100);
+  ctx.stroke();
+</script>

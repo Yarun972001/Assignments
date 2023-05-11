@@ -1,0 +1,635 @@
+Q-1:-What are the benefits of using CSS? 
+ans:-CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, etc. CSS saves time − You can write CSS once and then reuse the same sheet in multiple HTML pages.
+ 
+Q-2:-What are the disadvantages of CSS?
+ans:-Disadvantages of CSS: CSS, CSS 1 up to CSS3, result in creating of confusion among web browsers. With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.
+
+Q-3:-What is the difference between CSS2 and CSS3?
+ans:-The work on drafting the CSS 3 specification started early at the time of the publication of the CSS 2 recommendation. CSS 2 was a large and single specification with a wide range of features, while CSS 3 consisted of separate documents called modules. Here, each module or document incorporates new capabilities to the features of CSS 2.
+
+Q-4:-Name a few CSS style components .
+ans:-
+
+
+Q-5:-What do you understand by CSS opacity?
+ans:-The opacity in CSS is the property of an element that describes the transparency of the element. It is the opposite of transparency & represents the degree to which the content will be hidden behind an element.
+
+Q-6:-How can the background color of an element be changed?
+ans:-Example, 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    a{
+        text-decoration: none;
+        background-color: red;
+        color: white;
+    }
+    a:hover{
+        background-color: green;
+        
+        color: black;
+
+    }
+    </style>
+</head>
+<body>
+    <a href="">home</a>
+
+<button>hello</button>
+
+</body>
+</html>
+
+Q-7:-How can image repetition of the backup be controlled?
+ans:-The background-repeat property that will help us to control the repetition of the image. The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It also decides whether the background image will be repeated or not.
+
+Example-1:-Background Repeat.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+            background-repeat:no-repeat;
+        }
+
+        h2 {
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+        }
+
+        h3 {
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+        }
+        h4{
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+
+        }
+        *{
+            background-position: center;
+            background-repeat:repeat;
+        }
+    </style>
+</head>
+
+<body background="https://66.media.tumblr.com/45f497ad5534a6c52a1ab357e3696a86/tumblr_o1zjxhhmet1svp654o2_640.jpg"
+alt="" >
+    <center>
+       
+        <form action="">
+          04:44:08 AM <br>
+            Tuesday
+            <form action="">
+                <table>
+                    <tr>
+                        <th>
+                            <input type="text" placeholder="Add Your Tasks....">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+            <h1> <del>
+                    Book a meeting with HOD
+                </del>
+            </h1>
+            <h2>
+                Wrok on Department Newsletters
+            </h2>
+            <h3>
+                <del> 30 Minutes Exercise</del>
+            </h3>
+            <h4>
+                Work On ABC Project
+            </h4>
+        </center>
+</body>
+
+</html>
+
+Example-2:-Background Not Repeat.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+            background-repeat:no-repeat;
+        }
+
+        h2 {
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+        }
+
+        h3 {
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+        }
+        h4{
+            height: 30px;
+            width: 600px;
+            background-color: aquamarine;
+            opacity: 0.5;
+            color: black;
+
+        }
+        *{
+            background-position: center;
+            background-repeat:no-repeat;
+        }
+    </style>
+</head>
+
+<body background="https://66.media.tumblr.com/45f497ad5534a6c52a1ab357e3696a86/tumblr_o1zjxhhmet1svp654o2_640.jpg"
+alt="" >
+    <center>
+       
+        <form action="">
+          04:44:08 AM <br>
+            Tuesday
+            <form action="">
+                <table>
+                    <tr>
+                        <th>
+                            <input type="text" placeholder="Add Your Tasks....">
+                        </th>
+                    </tr>
+                </table>
+            </form>
+            <h1> <del>
+                    Book a meeting with HOD
+                </del>
+            </h1>
+            <h2>
+                Wrok on Department Newsletters
+            </h2>
+            <h3>
+                <del> 30 Minutes Exercise</del>
+            </h3>
+            <h4>
+                Work On ABC Project
+            </h4>
+        </center>
+</body>
+
+
+</html>
+
+Q-8:-What is the use of the background-position property?
+ans:-There are five different types of position property available in CSS:
+
+1.Fixed position: Any HTML element with position: fixed property will be positioned relative to the viewport. An element with fixed positioning allows it to remain in the same position even we scroll the page. We can set the position of the element using the top, right, bottom, and left.
+
+2.Static: This method of positioning is set by default. If we don’t mention the method of positioning for any element, the element has the position: static method by default. By defining Static, the top, right, bottom, and left will not have any control over the element. The element will be positioned with the normal flow of the page.
+
+3.Relative: An element with position: relative is positioned relatively with the other elements which are sitting on top of it. If we set its top, right, bottom, or left, other elements will not fill up the gap left by this element. An element with its position set to relative and when adjusted using top, bottom, left, and right will be positioned relative to its original position.
+
+4.Absolute: An element with position: absolute will be positioned with respect to its nearest Non-static ancestor. The positioning of this element does not depend upon its siblings or the elements which are at the same level.
+
+5.Sticky: Element with position: sticky and top:0 played a role between fixed & relative based on the position where it is placed. If the element is placed in the middle of the document then when the user scrolls the document, the sticky element start scrolling until it touched the top. When it touches the top, it will be fixed at the top place in spite of further scrolling. we can stick the element at the bottom, with the bottom property.
+
+Q-9:-Which property controls the image scroll in the background?
+ans:-The background-attachment property in CSS is used to specify the kind of attachment of the background image with respect to its container. It can be set to scroll or make it remain fixed. It can be applied to all HTML elements.
+Syntax:-background-attachment: scroll|fixed|local|initial|inherit;
+
+Q-10:-Why should background and color be used as separate properties?
+ans:-This is done with mainly two purposes:
+ 1. It makes the style sheets more legible. Background property, which is complex in itself, becomes all the more complex with color. 
+2. Color is an in-built property while the background is not one. 
+
+Q-11:-How to center block elements using CSS1?
+ans:-Center block elements using margin property: We need to specify the margin from left and right such that it looks centered. We do not need to do this manually, we have one property value “auto” which will automatically set the margin such that our block element is placed in the center. Use the below CSS property to center your block element.
+
+Q-12:-How to maintain the CSS specifications?
+ans:-If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element.
+
+Think of specificity as a score/rank that determines which style declaration is ultimately applied to an element.
+
+Examples:
+
+1.In this example, we have used the "p" element as selector, and specified a red color for this element. The text will be red:
+
+<html>
+<head>
+  <style>
+
+    p {color: red;}
+  </style>
+</head>
+<body>
+
+<p>Hello World!</p>
+
+</body>
+</html>
+
+2.In this example, we have added a class selector (named "test"), and specified a green color for this class. The text will now be green (even though we have specified a red color for the element selector "p"). This is because the class selector is given higher priority:
+
+<html>
+<head>
+  <style>
+    .test {color: green;}
+    p {color: red;}
+  </style>
+</head>
+<body>
+
+<p class="test">Hello World!</p>
+
+</body>
+</html>
+
+Q-13:-What are the ways to integrate CSS as a web page?
+ans:-There are three ways of inserting a style sheet:
+
+1.External CSS:-With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+
+2.Internal CSS:-An internal style sheet may be used if one single HTML page has a unique style.
+
+The internal style is defined inside the <style> element, inside the head section.
+
+3.Inline CSS:-An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+Q-14:-What is embedded style sheets?
+ans:-Embedded Stylesheet: It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the <style></style> tags containing the CSS properties in the head of your document. Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets. Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time. 
+
+Example:Below is an HTML document with the CSS styling for the entire web page enclosed within the <style></style> tags. These properties would be applied to all corresponding elements in the HTML document. 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	
+	<!-- Embedded stylesheet -->
+	<style>
+		h2 {
+			font-size: 1.5rem;
+			color: #2f8d46;
+			text-align: center;
+		}
+
+		p {
+			font-variant: italic;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Welcome To GFG</h2>
+	<p>This document is using an embedded stylesheet!</p>
+	<p>This is a paragraph</p>
+	<p>This is another paragraph</p>
+</body>
+
+</html>
+
+Q-15:-What are the external style sheets?
+ans:-With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+
+Example
+External styles are defined within the <link> element, inside the <head> section of an HTML page:
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+"mystyle.css"
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+
+Q-16:-What are the advantages and disadvantages of using external style sheets?
+ans:-
+
+The advantages of External Style Sheets are:
+
+- Using them, the styles of multiple documents can be controlled from one file.
+- Classes can be created for use on multiple HTML element types in many documents.
+- In complex situations, selector and grouping methods can be used to apply styles.
+
+The disadvantages of External Style Sheets are:
+
+- In order to import style information for each document, an extra download is needed.
+- Until the external style sheet is loaded, it may not be possible to render the document.
+- For small number of style definitions, it is not viable.
+
+Q-17:-What is the meaning of the CSS selector?
+ans:-CSS selectors are used to "find" (or select) the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+1.Simple selectors (select elements based on name, id, class)
+2.Combinator selectors (select elements based on a specific relationship between them)
+3.Pseudo-class selectors (select elements based on a certain state)
+4.Pseudo-elements selectors (select and style a part of an element)
+5.Attribute selectors (select elements based on an attribute or attribute value)
+
+(Selector)        (Example)           (Example description)
+
+#id               #firstname	        Selects the element with id="firstname"
+
+.class 	      .intro	              Selects all elements with class="intro"
+
+element.class	p.intro	        Selects only <p> elements with class="intro"
+
+*	            *	              Selects all elements
+
+element	      p	              Selects all <p> elements
+
+element,element,..	div, p               Selects all <div> elements and all <p> elements
+
+Example:-
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1,h2{
+            color: red;
+        } */
+        * {
+            background-color: blue;
+        }
+
+        #one {
+            background-color: aqua;
+        }
+
+        .one {
+            background-color: brown;
+        }
+
+        h1.one {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <h2>hiii!!</h2>
+    <p id="one">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veniam placeat? Ratione vel nam quo
+        dolores assumenda eveniet pariatur asperiores, expedita totam placeat ducimus. Autem aliquid explicabo
+        voluptatem mollitia? Aperiam!</p>
+    <h1 class="one">Tops</h1>
+    <p class="one">Tech</p>
+</body>
+
+</html>
+
+Q-18:-What is the rule set?
+ans:-The “.” in the beginning indicates that the rule created will be a class, also “container” indicates the name of the selector. Similarly “first-child” indicates the pseudo-class, and elements inside curly brackets are elements of a declaration block, which contains some CSS properties and their corresponding values. The CSS ruleset will be applied when the selector name is called on the main HTML page. 
+
+CSS Ruleset is the main building block of the CSS stylesheet.
+
+Example 1: The following code demonstrates the application of CSS ruleset on various HTML elements. The class name is used to give property and its corresponding values. The :first-child selector is used to selecting those elements which are the first-child elements as implemented below for the HTML “p” element. 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Rulesets in CSS</title>
+	<style>
+		h1 {
+			color: green;
+		}
+		/* Selector */
+		p:first-child{
+			
+			/* Declaration-block */
+			background-color: green;
+			color: white;
+			font-size: 15px;
+			border-radius: 50px		
+			;
+			text-transform: uppercase				
+			;
+			font-weight: bold;
+		}
+
+		body {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<p>Welcome To Largest Computer Science portal</p>
+
+		<h1>GeeksforGeeks</h1>
+		<h2>CSS Rulesets</h2>
+
+		<p>GeeksforGeeks </p>
+
+	</div>
+</body>
+</html>
+
+Example 2: The following code also applied some of the different CSS ruleset for various HTML elements.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rulesets in CSS</title>
+	<style>
+	h1 {
+		color: green;
+	}
+		
+	/* Selector */
+	span {
+		
+		/* Declaration-block */
+		background-color: green;
+		color: white;
+		padding: 5px;
+		font-size: 15px;
+		border-radius: 50px;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: small;
+	}
+
+	.divClass {
+		font-family: "Franklin Gothic Medium",
+					"Arial Narrow", Arial, sans-serif;
+	}
+
+	body {
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="divClass">
+	<span> This website is for geeks </span>
+	<h1>GeeksforGeeks</h1>
+	<h2>
+		A CSS ruleset is applying various <br />
+		affirmations to various pieces of the document.
+	</h2>
+	</div>
+</body>
+</html>
+
+Q-19:-Create Layouts
+ans:-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STyle>
+        .header{
+            height: 100px;
+            width: 100%;
+            background-color: blueviolet;
+            text-align: center;
+            /* font-size: xx-large; */
+            color: aliceblue;
+            text-shadow:-2px -2px 2px white, 2px 2px 2px whitesmoke;
+            float: left;
+        }
+
+        .NAV{
+            height: 100px;
+            width: 100%;
+            background-color: aqua;
+            text-align: center;
+            /* font-size: xx-large; */
+            color: aliceblue;
+            text-shadow:-2px -2px 2px white, 2px 2px 2px whitesmoke;
+            float: left;
+        }
+
+        .SECTION{
+            height: 100px;
+            width: 70%;
+            background-color:bisque ;
+            text-align: center;
+            color: aliceblue;
+            text-shadow:-2px -2px 2px white, 2px 2px 2px whitesmoke;
+            float: left;
+        }
+
+        .article{
+            height: 100px;
+            width: 70%;
+            background-color:aquamarine ;
+            text-align: center;
+            color: aliceblue;
+            text-shadow:-2px -2px 2px white, 2px 2px 2px whitesmoke;
+            float: left;
+        }
+
+        .aside{
+            height: 200px;
+            width: 30%;
+            background-color:rgb(255, 146, 127) ;
+            text-align: center;
+            color: aliceblue;
+            text-shadow:-2px -2px 2px white, 2px 2px 2px whitesmoke;
+            float: right;
+            
+        }
+
+        .footer{
+            height: 100px;
+            width: 100%;
+            background-color:blueviolet ;
+            text-align: center;
+            color: aliceblue;
+            text-shadow:-2px -2px 2px white, 2px 2px 2px whitesmoke;
+            float: right;
+
+        }
+        
+    </STyle>
+</head>
+<body>
+        <div class="header" ><h1>HEADER</h1></div>
+        <DIV class="NAV"><h1>NAV</h1></DIV>
+        <DIV CLASS="SECTION " > <h1> SECTION </h1></DIV>
+       <div class="aside" > <h1> ASIDE  </h1></div>
+        <div class="article" >  <h1>ARTICLE </h1></div>
+        <div class="footer" ><h1>  FOOTER </h1></div>
+</body>
+</html>
