@@ -1,0 +1,412 @@
+Q.1:- What is JavaScript Output method?
+Ans:- JavaScript Output defines the ways to display the output of a given code. The output can be displayed by using four different ways which are listed below. 
+1. innerHTML: It is used to access an element. It defines the HTML content.
+2. document.write (): It is used for testing purpose.
+
+Q.2:-How to used JavaScript Output method? 
+Ans:-JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+
+1. innerHTML: It is used to access an element. It defines the HTML content.
+
+ Syntax:document.getElementById("id").innerHTML;
+ 
+ Example: This example uses innerHTML to display the data. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Output</title>
+</head>
+
+<body>
+	<h1>Tops Techno</h1>
+	<h2>
+		JavaScript Display Possibilities
+		Using innerHTML
+	</h2>
+	<p id="GFG"></p>
+
+	<!-- Script to use innerHTML -->
+	<script>
+		document.getElementById("GFG").innerHTML
+			= 10 * 2;
+	</script>
+
+</body>
+</html>
+
+2. document.write(): It is used for testing purpose. 
+
+Syntax:document.write()
+
+Example: This example uses document.write() property to display data. 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>JavaScript Output</title>
+</head>
+
+<body>
+	<h1>Tops Techno</h1>
+	<h2>
+		JavaScript Display Possibilities
+		Using document.write()
+	</h2>
+	<p id="GFG"></p>
+	<!-- Script to uses document.write() -->
+	<script>
+		document.write(10 * 2);
+	</script>
+
+</body>
+</html>
+
+3. window.alert(): It displays the content using an alert box. 
+
+Syntax:window.alert()
+
+Example: This example uses window.alert() property to display data. 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>JavaScript Output</title>
+</head>
+
+<body>
+	<h1>Tops Techno</h1>
+	<h2>
+		JavaScript Display Possibilities
+		Using window.alert()
+	</h2>
+	<p id="GFG"></p>
+	<!-- Script to use window.alert() -->
+	<script>
+		window.alert(10 * 2);
+	</script>
+</body>
+
+</html>
+
+4. console.log(): It is used for debugging purposes. 
+
+Syntax:console.log()
+
+Example: This example uses the console.log() property to display data. 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>JavaScript Output</title>
+</head>
+
+<body>
+	<h1>Tops Techno</h1>
+	<h2>
+		JavaScript Display Possibilities
+		Using console.log()
+	</h2>
+	<p id="GFG"></p>
+	<!-- Script to use console.log() -->
+	<script>
+		console.log(10 * 2);
+	</script>
+</body>
+
+</html>
+
+Q.3:-How to used JavaScript Events to do all examples?
+Ans:-
+
+
+;<!--
+JavaScript's interaction with HTML is handled through events that occur when the 
+user or the browser manipulates a page.
+
+When the page loads, it is called an event. When the user clicks a button, 
+that click too is an event. Other examples include events like pressing any key, 
+closing a window, resizing a window, etc.
+
+
+HTML 5 Standard Events
+The standard HTML 5 events are listed here for your reference. Here script indicates a Javascript function to be executed against that event.
+
+Attribute			Value	Description
+Offline	script		Triggers when the document goes offline
+Onabort	script		Triggers on an abort event
+onafterprint		script	Triggers after the document is printed
+onbeforeonload		script	Triggers before the document loads
+onbeforeprint		script	Triggers before the document is printed
+onblur	script		Triggers when the window loses focus
+oncanplay	script	Triggers when media can start play, but might has to stop for buffering
+oncanplaythrough	script	Triggers when media can be played to the end, without stopping for buffering
+onchange	script	Triggers when an element changes
+onclick	script		Triggers on a mouse click
+oncontextmenu	script	Triggers when a context menu is triggered
+ondblclick	script	Triggers on a mouse double-click
+ondrag	script		Triggers when an element is dragged
+ondragend	script	Triggers at the end of a drag operation
+ondragenter	script	Triggers when an element has been dragged to a valid drop target
+ondragleave	script	Triggers when an element is being dragged over a valid drop target
+ondragover	script	Triggers at the start of a drag operation
+ondragstart	script	Triggers at the start of a drag operation
+ondrop	script		Triggers when dragged element is being dropped
+ondurationchange	script	Triggers when the length of the media is changed
+onemptied	script	Triggers when a media resource element suddenly becomes empty.
+onended	script		Triggers when media has reach the end
+onerror	script		Triggers when an error occur
+onfocus	script		Triggers when the window gets focus
+onformchange	script	Triggers when a form changes
+onforminput	script	Triggers when a form gets user input
+onhaschange	script	Triggers when the document has change
+oninput	script		Triggers when an element gets user input
+oninvalid	script	Triggers when an element is invalid
+onkeydown	script	Triggers when a key is pressed
+onkeypress	script	Triggers when a key is pressed and released
+onkeyup	script		Triggers when a key is released
+onload	script		Triggers when the document loads
+onloadeddata	script	Triggers when media data is loaded
+onloadedmetadata	script	Triggers when the duration and other media data of a media element is loaded
+onloadstart	script	Triggers when the browser starts to load the media data
+onmessage	script	Triggers when the message is triggered
+onmousedown	script	Triggers when a mouse button is pressed
+onmousemove	script	Triggers when the mouse pointer moves
+onmouseout	script	Triggers when the mouse pointer moves out of an element
+onmouseover	script	Triggers when the mouse pointer moves over an element
+onmouseup	script	Triggers when a mouse button is released
+onmousewheel	script	Triggers when the mouse wheel is being rotated
+onoffline	script	Triggers when the document goes offline
+onoine	script		Triggers when the document comes online
+ononline	script	Triggers when the document comes online
+onpagehide	script	Triggers when the window is hidden
+onpageshow	script	Triggers when the window becomes visible
+onpause	script		Triggers when media data is paused
+onplay	script		Triggers when media data is going to start playing
+onplaying	script	Triggers when media data has start playing
+onpopstate	script	Triggers when the window's history changes
+onprogress	script	Triggers when the browser is fetching the media data
+onratechange	script	Triggers when the media data's playing rate has changed
+onreadystatechange	script	Triggers when the ready-state changes
+onredo	script		Triggers when the document performs a redo
+onresize	script	Triggers when the window is resized
+onscroll	script	Triggers when an element's scrollbar is being scrolled
+onseeked	script	Triggers when a media element's seeking attribute is no longer true, and the seeking has ended
+onseeking	script	Triggers when a media element's seeking attribute is true, and the seeking has begun
+onselect	script	Triggers when an element is selected
+onstalled	script	Triggers when there is an error in fetching media data
+onstorage	script	Triggers when a document loads
+onsubmit	script	Triggers when a form is submitted
+onsuspend	script	Triggers when the browser has been fetching media data, but stopped before the entire media file was fetched
+ontimeupdate	script	Triggers when media changes its playing position
+onundo	script		Triggers when a document performs an undo
+onunload	script	Triggers when the user leaves the document
+onvolumechange	script	Triggers when media changes the volume, also when volume is set to "mute"
+onwaiting	script	Triggers when media has stopped playing, but is expected to resume
+
+
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+<body>
+<input type="submit" name="submit" value="onclick here"  onclick="myfunction()">  <!-- onclick HTML EVENT-->
+<input type="submit" name="submit" value="ondblclick here" ondblclick="myfunction()">  <!-- onclick HTML EVENT-->
+<input type="submit" name="submit" value="onmouseover here" onmouseover="myfunction()">  <!-- onclick HTML EVENT-->
+<input type="submit" name="submit" value="onmouseout here" onmouseout="myfunction()">  <!-- onclick HTML EVENT-->
+<!--
+<input type="submit" name="submit" value="click here" 
+onblur="", 
+onchange="", 
+onclick="", 
+ondblclick="", 
+onfocus="", 
+onkeydown="", 
+onkeypress="", 
+onkeyup="", 
+onmousedown="", 
+onmousemove="", 
+onmouseout="", 
+onmouseover="", 
+onmouseup="">  
+
+<!-- onclick HTML EVENT-->
+<h1 id="raj">Arun Yadav</h1>
+
+<input type="text" id="demo" onkeypress="myfunction1()">
+
+
+
+<script>
+	// function of javasript
+	function myfunction()
+	{
+		document.getElementById('raj').innerHTML="This is all HTML EVENTS";	
+	}
+	function myfunction1()
+	{
+		document.getElementById('demo').style.color="red";
+		document.getElementById('demo').style.backgroundColor="yellow";		
+		document.getElementById('demo').style.textTransform="uppercase";
+	}
+</script>
+</body>
+</html>
+
+Q.4:-What is React Js?
+Ans:-ReactJS is an open-source JavaScript library that is used for building user interfaces in a declarative and efficient way. It is a component-based front-end library responsible only for the view layer of an MVC (Model View Controller) architecture. React is used to create modular user interfaces and it promotes the development of reusable UI components that display dynamic data.
+
+ReactJS uses a declarative paradigm which makes it possible for applications to be both effective and flexible. It creates simple views for each state in your application and efficiently updates and renders just the right component when your data changes. The declarative view makes your code more predictable and easier to debug. Each component in a React application is responsible for rendering a separate, reusable piece of HTML code. The ability to nest components within other components allows for the building of complex applications from simple building blocks. A component may also keep track of its internal state, for example, a TabList component may keep a variable for the open tab in memory.
+
+Q.5:-What is NPM in React JS?
+Ans:-NPM – or "Node Package Manager" – is the default package manager for JavaScript's runtime Node.js.
+
+It's also known as "Ninja Pumpkin Mutants", "Nonprofit Pizza Makers", and a host of other random names that you can explore and probably contribute to over at npm-expansions.
+
+NPM consists of two main parts:
+
+1:-a CLI (command-line interface) tool for publishing and downloading packages
+2:-an online repository that hosts JavaScript packages
+
+
+npm is installed with Node.js
+
+This means that you have to install Node.js to get npm installed on your computer.
+
+Download Node.js from the official Node.js web site: https://nodejs.org
+
+Software Package Manager
+The name npm (Node Package Manager) stems from when npm first was created as a package manager for Node.js.
+
+All npm packages are defined in files called package.json.
+
+The content of package.json must be written in JSON.
+
+At least two fields must be present in the definition file: name and version.
+
+Example
+{
+"name" : "foo",
+"version" : "1.2.3",
+"description" : "A package for fooing things",
+"main" : "foo.js",
+"keywords" : ["foo", "fool", "foolish"],
+"author" : "John Doe",
+"licence" : "ISC"
+}
+
+Managing Dependencies
+npm can manage dependencies.
+
+npm can (in one command line) install all the dependencies of a project.
+
+Dependencies are also defined in package.json.
+
+Sharing Your Software
+If you want to share your own software in the npm registry, you can sign in at:
+
+https://www.npmjs.com
+
+Publishing a Package
+You can publish any directory from your computer as long as the directory has a package.json file.
+
+Check if npm is installed:
+C:\>npm
+
+Check if you are logged in:
+C:\>npm whoami
+
+If not, log in:
+C:\>npm login
+
+Username: <your username>
+Password: <your password>
+Navigate to your project and publish your project:
+
+C:\Users\myuser>cd myproject
+C:\Users\myuser\myproject>npm publish
+
+
+Q.6:-What is CLI command In React Js?
+Ans:-React CLI can be used with several aliases like: cr-react-cli, react-cli, react, rct. Run component, context or hook commands to generate boilerplate files. npx react component menu npx react context menu npx react hook useMenu A quick tutorial to get you up and running with React CLI.
+
+Q.7:-What is Components in React Js?
+Ans:-Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+
+Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+1:-Class Components
+
+//rce
+// import React, { Component } from 'react'
+
+// export class Class_comp extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>Hi i am Class_comp component</h1>  
+//       </div>
+//     )
+//   }
+// }
+// export default Class_comp
+
+
+//rcc
+
+import React, { Component } from 'react'
+
+export default class Class_comp extends Component {
+  render() {
+    return (
+      <div>
+         Class_comp
+      </div>
+    )
+  }
+}
+
+2:-Function Components	
+
+
+//rfce
+// import React from 'react'
+
+// function Func_comp() {
+//   return (
+//     <div>
+//         <h1>Hi i am Func_comp component</h1>
+//     </div>
+//   )
+// }
+
+// export default Func_comp
+
+
+//rfc
+
+import React from 'react'
+
+export default function Func_comp() {
+  return (
+    <div>Func_comp</div>
+  )
+}
+
+
+

@@ -1,0 +1,344 @@
+Q-1:-What is JQuery?
+ans:-jQuery is a lightweight, "write less, do more", JavaScript library.
+
+The purpose of jQuery is to make it much easier to use JavaScript on 
+your website.
+
+jQuery takes a lot of common tasks that require many lines of JavaScript 
+code to accomplish, and wraps them into methods/function that 
+you can call with a single line of code.
+
+jQuery also simplifies a lot of the complicated things from JavaScript,
+ like AJAX calls and DOM manipulation.
+ 
+The jQuery library contains the following features:
+
+HTML/DOM manipulation
+CSS manipulation
+HTML event methods
+Effects and animations
+AJAX
+Utilities
+
+
+Q-2:-How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, JQuery Animation?
+ans:-
+
+--->Apply CSS Using JQuaery
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").css("background-color", "yellow");
+	$("p").css("color", "blue");
+	$("p").css("font-size", "32px");
+	$("p").css("text-transform", "Uppercase");
+  });
+});
+</script>
+</head>
+<body>
+<p style="background-color:#ff0000">This is a paragraph.</p>
+<p style="background-color:#00ff00">This is a paragraph.</p>
+<p style="background-color:#0000ff">This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+<button>Set background-color of p</button>
+
+</body>
+</html>
+
+
+--->Add Class & Remove Classs
+
+* The addClass() or removeClass() methods are used to add the CSS classes when there is a need to add to our webpage when there is some event listener or to create some     
+  kind of effect.
+  
+* In this article, let us see how can we add a CSS class or remove a CSS class in jQuery.
+
+* Syntax:
+
+* Adding a class:
+* $('selector').addClass(class_name);
+* Removing a class:
+* $('selector').removeClass(class_name);
+
+
+* Example: The following example adds a class that makes the background colour black when clicked on ADD CLASS button and also removes that added class when clicked on the REMOVE CLASS button.
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<!-- Including jQuery -->
+	<script src=
+		"https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous">
+	</script>
+
+	<style>
+		h1 {
+			color: #006600;
+		}
+		
+		button {
+			color: white;
+			background-color: #006600;
+			width: auto;
+			height: 30px;
+		}
+		
+		body {
+			text-align: center;
+		}
+		
+		div {
+			margin: 10px;
+			height: 150px;
+			width: 150px;
+			position: relative;
+			text-align: center;
+			display: flex;
+			left: 215px;
+		}
+		
+		.bg-black {
+			background-color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Geeks For Geeks</h1>
+
+	<button id="btnadd"> ADD CLASS </button>
+	<button id="btnremove"> REMOVE CLASS </button>
+
+
+	<div id="GFG_IMAGE">
+
+		<!-- Image added using img tag
+			with src attribute -->
+		<img src=
+"https://write.geeksforgeeks.org/static/media/Group%20210.08204759.svg"
+			height='150px' width='150px'>
+		<img>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			$('#btnadd').click(function() {
+				$('img').addClass('bg-black');
+			});
+			$('#btnremove').click(function() {
+				$('img').removeClass('bg-black');
+			});
+		});
+	</script>
+</body>
+
+</html>
+
+
+--->JQuery Animation
+
+* The animate() method is an inbuilt method in jQuery which is used to change the state of the element with CSS style. This method can also be used to change the CSS property to create the animated effect for the selected element. 
+
+* Syntax:
+
+* (selector).animate({styles}, para1, para2, para3);
+
+  { Here “selector” is the selected element. }
+
+
+Example 1: In this example, the parameter is not passed to this method.
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<!--jQuery code to show animate() method-->
+	<script>
+		
+			$(document).ready(function () {
+				$("#b1").click(function () {
+					$("#box").animate({
+						width: "300px"
+					});
+					$("#box").animate({
+						height: "300px"
+					});
+				});
+			});
+	</script>
+	<style>
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+
+		#b1 {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="box"></div>
+	<!-- click on this button -->
+	<button id="b1">Click Here !</button>
+</body>
+
+</html>
+
+
+Example 2: In this example, all the parameter is passed to this method. 
+
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <script src=
+"https://code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <style>
+        div {
+            background-color: green;
+            height: 100px;
+            width: 100px;
+            margin-top: 10px;
+        }
+  
+        #b1 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+  
+<body>
+    <div id="box"></div>
+    <!-- click here and animation will start -->
+    <button id="b1">Click Here !</button>
+    <!-- jQuery code to show the animate method -->
+    <script>
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                $("#box").animate({
+                    height: "200px",
+                    width: "200px"
+                }, {
+                    duration: 1000,
+                    easing: "linear",
+                    complete: function () {
+                        $(this).after(
+"<p>Reaches to maximum height and width !</p>");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+  
+</html>
+
+
+Q-3:-How to create slider with animation?
+ans:-In jQuery, we can produce various types of animation using the animate() method. This method can produce simple to complex animation in the web page. Using animation, we can change the properties of HTML elements such as background colour, changing border styles, changing navigation properties, formatting the font properties, etc.
+We apply changes to the properties by providing the styles rules in the params parameter of the method.
+
+* Syntax:
+
+[ $("selector").animate({params}, speed, callback); ]
+
+slideDown() :This method makes the element to slide down.
+* Syntax:
+ [ $(selector).slideDown(speed,callback); ]
+
+Example :In this example, we show the slide down effect .If the Slide Down panel is clicked ,the corresponding change is made to the HTML element.
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/
+             ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style type="text/css"> 
+#p1, #f1 {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 2px green;
+    }
+#p1 {
+    padding: 50px;
+    width:100px;
+    display:none;
+    color: green;
+    font-style: italic;
+    }
+#f1 {
+    width:190px;
+    }    
+</style>
+</head>
+<body>
+<h1 align="center">Silde Down Example</h1>
+<center>
+<div id="f1">Slide down Effect</div>
+<div id="p1">Welcome to GeeksForGeeks.</div>
+</center>
+<script type="text/javascript"> 
+    $("#f1").click(function(){
+        $("#p1").slideDown("slow");
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
