@@ -1,0 +1,165 @@
+
+Modual 1
+
+
+// Show an alert
+alert('Hello, this is an alert!');
+
+// Results for the expressions
+console.log(5 > 4); // Result: true
+console.log("apple" > "pineapple"); // Result: false
+console.log("2" > "12"); // Result: true (comparison is done lexicographically)
+console.log(undefined == null); // Result: true
+console.log(undefined === null); // Result: false
+console.log(null == "\n0\n"); // Result: false
+console.log(null === +"\n0\n"); // Result: false
+
+// Will alert be shown?
+if ("0") { alert('Hello'); } // Yes, alert will be shown as "0" is a truthy value
+
+// Output of the code
+alert(null || 2 || undefined); // Output: 2 (returns the first truthy value, which is 2)
+
+// Function that checks age and asks for confirmation
+const checkAge = (age) => {
+  if (age > 18) {
+    return true;
+  } else {
+    // ...return confirm ('did parents allow you?');
+    return confirm('Did parents allow you?');
+  }
+};
+
+// Replace Function Expressions with arrow functions
+const ask = (question, yes, no) => {
+  if (confirm(question)) {
+    yes();
+  } else {
+    no();
+  }
+};
+
+ask(
+  'Do you agree?',
+  () => {
+    alert('You agreed.');
+  },
+  () => {
+    alert('You canceled the execution.');
+  }
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+modual 2
+
+
+
+Certainly! Below is the code that fulfills each of the tasks step by step:
+
+### Create an empty object user:
+```javascript
+let user = {};
+```
+
+### Add the property name with the value John:
+```javascript
+user.name = 'John';
+```
+
+### Add the property surname with the value Smith:
+```javascript
+user.surname = 'Smith';
+```
+
+### Change the value of the name to Pete:
+```javascript
+user.name = 'Pete';
+```
+
+### Remove the property name from the object:
+```javascript
+delete user.name;
+```
+
+### Is array copied?
+```javascript
+let fruits = ["Apples", "Pear", "Orange"];
+let shoppingCart = fruits;
+shoppingCart.push("Banana");
+alert(fruits.length); // Output: 4 (fruits array is not copied, shoppingCart is referencing the same array as fruits)
+```
+
+### Map to names:
+```javascript
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+let users = [john, pete, mary];
+let names = users.map(user => user.name);
+alert(names); // Output: "John, Pete, Mary"
+```
+
+### Map to objects:
+```javascript
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+let users = [john, pete, mary];
+let usersMapped = users.map(user => ({ fullName: `${user.name} ${user.surname}`, id: user.id }));
+/*
+usersMapped = [
+  { fullName: "John Smith", id: 1 },
+  { fullName: "Pete Hunt", id: 2 },
+  { fullName: "Mary Key", id: 3 }
+]
+*/
+alert(usersMapped[0].id); // Output: 1
+alert(usersMapped[0].fullName); // Output: "John Smith"
+```
+
+### Sum the properties:
+```javascript
+let salaries = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+
+function sumSalaries(salaries) {
+  let sum = 0;
+  for (let salary of Object.values(salaries)) {
+    sum += salary;
+  }
+  return sum;
+}
+
+alert(sumSalaries(salaries)); // Output: 650
+```
+
+### Destructuring assignment:
+```javascript
+let user = { name: "John", years: 30 };
+
+let { name, years: age, isAdmin = false } = user;
+```
+
+### Turn the object into JSON and back:
+```javascript
+let user = { name: "John Smith", age: 35 };
+
+let userJSON = JSON.stringify(user); // Convert to JSON
+let userCopy = JSON.parse(userJSON); // Parse JSON back into an object
+```

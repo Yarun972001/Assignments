@@ -1,0 +1,281 @@
+Module – 3 ReactJs
+Q.1:-What is React Js?
+Ans:-ReactJS is an open-source JavaScript library that is used for building user interfaces in a declarative and efficient way. It is a component-based front-end library responsible only for the view layer of an MVC (Model View Controller) architecture. React is used to create modular user interfaces and it promotes the development of reusable UI components that display dynamic data.
+
+ReactJS uses a declarative paradigm which makes it possible for applications to be both effective and flexible. It creates simple views for each state in your application and efficiently updates and renders just the right component when your data changes. The declarative view makes your code more predictable and easier to debug. Each component in a React application is responsible for rendering a separate, reusable piece of HTML code. The ability to nest components within other components allows for the building of complex applications from simple building blocks. A component may also keep track of its internal state, for example, a TabList component may keep a variable for the open tab in memory.
+
+Q.2:-What is NPM in React JS?
+Ans:-NPM – or "Node Package Manager" – is the default package manager for JavaScript's runtime Node.js.
+
+It's also known as "Ninja Pumpkin Mutants", "Nonprofit Pizza Makers", and a host of other random names that you can explore and probably contribute to over at npm-expansions.
+
+NPM consists of two main parts:
+
+1:-a CLI (command-line interface) tool for publishing and downloading packages
+2:-an online repository that hosts JavaScript packages
+
+
+npm is installed with Node.js
+
+This means that you have to install Node.js to get npm installed on your computer.
+
+Download Node.js from the official Node.js web site: https://nodejs.org
+
+Software Package Manager
+The name npm (Node Package Manager) stems from when npm first was created as a package manager for Node.js.
+
+All npm packages are defined in files called package.json.
+
+The content of package.json must be written in JSON.
+
+At least two fields must be present in the definition file: name and version.
+
+Example
+{
+"name" : "foo",
+"version" : "1.2.3",
+"description" : "A package for fooing things",
+"main" : "foo.js",
+"keywords" : ["foo", "fool", "foolish"],
+"author" : "John Doe",
+"licence" : "ISC"
+}
+
+Managing Dependencies
+npm can manage dependencies.
+
+npm can (in one command line) install all the dependencies of a project.
+
+Dependencies are also defined in package.json.
+
+Sharing Your Software
+If you want to share your own software in the npm registry, you can sign in at:
+
+https://www.npmjs.com
+
+Publishing a Package
+You can publish any directory from your computer as long as the directory has a package.json file.
+
+Check if npm is installed:
+C:\>npm
+
+Check if you are logged in:
+C:\>npm whoami
+
+If not, log in:
+C:\>npm login
+
+Username: <your username>
+Password: <your password>
+Navigate to your project and publish your project:
+
+C:\Users\myuser>cd myproject
+C:\Users\myuser\myproject>npm publish
+
+
+Q.3:-What is CLI command In React Js?
+Ans:-React CLI can be used with several aliases like: cr-react-cli, react-cli, react, rct. Run component, context or hook commands to generate boilerplate files. npx react component menu npx react context menu npx react hook useMenu A quick tutorial to get you up and running with React CLI.
+
+Q.4:-What is Components in React Js?
+Ans:-Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+
+Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+1:-Class Components
+
+//rce
+// import React, { Component } from 'react'
+
+// export class Class_comp extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>Hi i am Class_comp component</h1>  
+//       </div>
+//     )
+//   }
+// }
+// export default Class_comp
+
+
+//rcc
+
+import React, { Component } from 'react'
+
+export default class Class_comp extends Component {
+  render() {
+    return (
+      <div>
+         Class_comp
+      </div>
+    )
+  }
+}
+
+2:-Function Components	
+
+
+//rfce
+// import React from 'react'
+
+// function Func_comp() {
+//   return (
+//     <div>
+//         <h1>Hi i am Func_comp component</h1>
+//     </div>
+//   )
+// }
+
+// export default Func_comp
+
+
+//rfc
+
+import React from 'react'
+
+export default function Func_comp() {
+  return (
+    <div>Func_comp</div>
+  )
+}
+
+Q-5    What is Role of Node Js in react Js?
+Node.js and React.js are often used together in web development, but they serve different purposes within a web application.
+while React focuses on building the user interface and components of a web application, Node.js plays a crucial role in the overall development and deployment process. It handles server-side rendering, serves as a development server, manages dependencies, and can be used for building backend services that complement React front-end applications. Together, they provide a powerful and efficient environment for building modern web applications.
+
+Q-6      What is Header and Content Components in React Js?
+Header Component:
+The "Header" component typically represents the top section of a web page or application. It often contains elements such as a navigation bar, a logo, links, or any other content that is intended to be displayed at the top of the UI.
+Content Component:
+The "Content" component typically represents the main section of a web page or application where the primary content is displayed. This can include various components, widgets, or sections that make up the core content of the page.
+
+Q-7  How to install React Js on Windows, linux Operating System? How to install NPM and How to check version of NPM?
+Install React.js on Windows:
+npm install -g create-react-app
+npx create-react-app my-react-app
+cd my-react-app
+npm start
+Install React.js on Linux:
+sudo apt update
+sudo apt install nodejs npm
+sudo npm install -g create-react-app
+npx create-react-app my-react-app
+cd my-react-app
+npm start
+
+1.How to check version of React Js?
+To check the version of npm, run the following command in the terminal or command prompt:
+npm -v
+
+2.How to change in components of React Js?
+Locate the Component File:
+Identify the component you want to change, and locate its corresponding file in your project. React components are often defined in separate files, and their names typically end with .jsx or .js extension.
+Make Code Changes:
+Open the component file using a code editor, and make the necessary changes to the component's code. You can modify the JSX structure, update the component's logic, add new elements, or make any other necessary adjustments.
+
+3. How to Create a List View in React Js?
+ans.
+
+// Filename - index.js 
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const numbers = [1,2,3,4,5];
+
+const updatedNums = numbers.map((number)=>{
+	return <li>{number}</li>;
+});
+
+ReactDOM.render(
+	<ul>
+		{updatedNums}
+	</ul>, 
+	document.getElementById('root')
+);
+
+
+
+
+4.Create Increment decrement state change by button click?
+ans.
+
+class Search extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {count : 0}
+
+    this.M = {Message : " "}
+    this.increment = this.increment.bind(this);
+    this.decrement = this.decrement.bind(this);
+    this.result = this.result.bind(this);
+    this.result();
+
+  }
+
+  increment(){
+    this.setState({count : this.state.count + 1}) ;
+    this.result()
+    this.forceUpdate();
+  }
+
+  decrement() {
+    this.setState({count : this.state.count - 1});
+    this.result()
+    this.forceUpdate();
+  }
+
+  result() {
+    if (this.state.count >0)
+    {
+      this.forceUpdate();
+      //  this.setState({Message : "positive"});
+      this.M.Message = "Positive";
+      // this.forceUpdate();
+    } else 
+    {  
+      this.M.Message = "Negative";
+      // this.forceUpdate();
+
+      // this.setState({Message : "NEGATIVE "});
+
+    }
+    this.forceUpdate();
+   
+  }
+
+
+
+// }
+render() {
+    return (
+      <View>
+                <Text style = {{margin: 45, fontSize: 22}}>you have  {this.state.count} Coin</Text>
+                <Button 
+                      onPress={this.increment}
+                      title="win Coin "
+                      color="#841584" />
+                <Button
+                      onPress = {this.decrement}
+                      title="lose Coin"
+                      color="#841584" />
+
+
+                      <Text style = {{fontSize : 28}}> Result :  {this.M.Message} </Text>
+       </View>
+    )  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
